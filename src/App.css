@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Serif Italic";   /*Can be any text*/
+  src: local("LiberationSerif-Italic"),
+    url("./assets/fonts/LiberationSerif-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Serif";   /*Can be any text*/
+  src: local("LiberationSerif-Regular"),
+    url("./assets/fonts/LiberationSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";   /*Can be any text*/
+  src: local("AlteHaasGroteskBold"),
+    url("./assets/fonts/AlteHaasGroteskBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Regular";   /*Can be any text*/
+  src: local("AlteHaasGroteskRegular"),
+    url("./assets/fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+}

@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "target": "es2021",
+      "module": "commonjs", 
+      "moduleResolution": "node", 
+      "noImplicitAny": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "jsx": "react", 
+      "outDir": "build-client/",
+      "lib": [ "es2021", "dom" ]
+    },
+    "paths": {
+      "*": [
+          "node_modules/*",
+          "src/**/*"
+      ]
+    },
+    "ts-node": { "files": true },
+    "files": [
+      "src/index.tsx",
+      "src/declarations.d.ts"
+    ],
+    "include": ["src/**/*", "tests/constants", "src/declarations.d.ts"],
+    "exclude": ["node_modules", "**/*.test.ts"]
+  }
