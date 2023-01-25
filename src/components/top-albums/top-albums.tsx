@@ -191,9 +191,11 @@ export const TopAlbums = () => {
           <LoadingWrapper loading={loading}>
             <Circles width="60" height="60" color="#A3B051" visible={loading} />
           </LoadingWrapper>
-          {albums?.map((album, index) => {
-            return renderLeftOrRight(album, index, loading);
-          })}
+          <div style={{ paddingTop: "30px" }}>
+            {albums?.map((album, index) => {
+              return renderLeftOrRight(album, index, loading);
+            })}
+          </div>
         </div>
         <DetailsWrapper>
           <h1>Listening Habits</h1>

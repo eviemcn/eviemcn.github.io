@@ -40,11 +40,6 @@ export const SelectOption = styled.div<{
     }
     outline: none;
   }
-  :active {
-    > p {
-      color: pink;
-    }
-  }
 `;
 
 export const LoadingWrapper = styled.div<{
@@ -93,6 +88,7 @@ export const AlbumText = styled.div`
       text-decoration: none;
     }
     padding-bottom: 18px;
+    letter-spacing: 1px;
     font-family: "Bold";
   }
   ${ArtistTitle}, ${PlayCount} {
@@ -129,6 +125,7 @@ export const AlbumTextLeft = styled.div`
     }
     padding-bottom: 18px;
     font-family: "Bold";
+    letter-spacing: 1px;
   }
   ${ArtistTitle}, ${PlayCount} {
     font-size: 14px;
@@ -176,7 +173,6 @@ export const AlbumWrapper = styled.div<{
 }>`
   display: flex;
   align-items: flex-end;
-  //background-color: pink;
   margin-top: 18px;
   border-radius: 5px;
   :hover,
@@ -213,7 +209,6 @@ export const AlbumWrapperTextRight = styled.div<{
 }>`
   display: flex;
   align-items: flex-end;
-  //background-color: pink;
   margin-top: 18px;
   border-radius: 5px;
   justify-content: flex-end;
