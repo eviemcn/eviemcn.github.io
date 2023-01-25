@@ -11,6 +11,12 @@ export const DetailsWrapper = styled.div`
     font-family: "Bold";
     letter-spacing: 3px;
   }
+  > h3 {
+    font-family: "Bold";
+    letter-spacing: 1px;
+    color: #a3b051;
+    margin: 0;
+  }
 `;
 
 export const SketchWrapper = styled.div`

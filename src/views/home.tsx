@@ -32,6 +32,7 @@ export const Home = () => {
           </a>{" "}
           if you’d like to take a look at the code.
         </p>
+        <h3>Evie McNaughton</h3>
       </DetailsWrapper>
       <SketchWrapper>
         <SketchGrid>

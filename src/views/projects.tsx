@@ -311,7 +311,11 @@ export const Projects = () => {
 
       {isViewerOpen && (
         <ImageViewer
-          backgroundStyle={{ zIndex: 10, backgroundColor: "rgb(0,0,0,0.9)" }}
+          backgroundStyle={{
+            zIndex: 10,
+            backgroundColor: "rgb(0,0,0,0.9)",
+            padding: "0 200px",
+          }}
           src={images}
           currentIndex={currentImage}
           disableScroll={false}

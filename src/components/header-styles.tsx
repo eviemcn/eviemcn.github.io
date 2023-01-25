@@ -33,8 +33,6 @@ export const FooterContainer = styled.div`
 `;
 
 export const Logo = styled.div`
-  height: 30px;
-  width: 30px;
   :hover {
     cursor: pointer;
   }
@@ -58,4 +56,6 @@ export const RightLinks = styled.div`
   margin-left: auto;
   margin-right: 20px;
   font-family: "Bold";
+  display: flex;
+  align-items: center;
 `;
