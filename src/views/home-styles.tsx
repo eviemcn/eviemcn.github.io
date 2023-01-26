@@ -17,6 +17,14 @@ export const DetailsWrapper = styled.div`
     color: #a3b051;
     margin: 0;
   }
+  > p {
+    > a {
+      text-decoration: none;
+      :hover {
+        color: #a3b051;
+      }
+    }
+  }
 `;
 
 export const SketchWrapper = styled.div`
