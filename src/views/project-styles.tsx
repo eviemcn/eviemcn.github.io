@@ -4,13 +4,44 @@ export const Arrow = styled.div`
   padding-left: 5px;
 `;
 
+export const NavListItem = styled.p`
+  display: flex;
+  > a {
+    outline: none;
+    color: black;
+    :hover,
+    :focus {
+      color: #a3b051;
+      outline: none;
+    }
+    :focus-visible {
+      color: #a3b051;
+      outline: none;
+    }
+    :visited {
+      color: black;
+    }
+  }
+  @media only screen and (min-width: 850px) {
+    justify-content: flex-end;
+    > a {
+      text-decoration: none;
+    }
+  }
+`;
+
 export const DetailsWrapper = styled.div`
-  position: fixed;
-  width: 25%;
-  right: 5%;
-  top: 20%;
+  padding-top: 20px;
+  @media only screen and (min-width: 850px) {
+    padding-top: 0;
+    position: fixed;
+    width: 25%;
+    right: 5%;
+    top: 20%;
+    text-align: right;
+  }
   font-family: "Serif";
-  text-align: right;
+  text-align: left;
   > h1 {
     font-family: "Bold";
     letter-spacing: 3px;
@@ -19,36 +50,18 @@ export const DetailsWrapper = styled.div`
     font-family: "Bold";
     letter-spacing: 1px;
   }
-  > div {
-    > p {
-      > a {
-        outline: none;
-        text-decoration: none;
-        color: black;
-        :hover,
-        :focus {
-          color: #a3b051;
-          outline: none;
-        }
-        :focus-visible {
-          color: #a3b051;
-          outline: none;
-        }
-        :visited {
-          color: black;
-        }
-      }
-    }
-  }
 `;
 
 export const TextWrapperLeft = styled.div`
+  @media only screen and (min-width: 1440px) {
+    text-align: right;
+    width: 27%;
+    padding-top: 20px;
+    position: absolute;
+    right: 70%;
+  }
+  text-align: left;
   font-family: "Serif";
-  text-align: right;
-  width: 27%;
-  padding-top: 20px;
-  position: absolute;
-  right: 70%;
   > h1 {
     font-family: "Bold";
     letter-spacing: 3px;
@@ -70,12 +83,14 @@ export const TextWrapperLeft = styled.div`
 `;
 
 export const TextWrapperRight = styled.div`
-  font-family: "Serif";
+  @media only screen and (min-width: 1440px) {
+    position: absolute;
+    padding-top: 20px;
+    left: 32%;
+    width: 27%;
+  }
   text-align: left;
-  position: absolute;
-  padding-top: 20px;
-  left: 32%;
-  width: 27%;
+  font-family: "Serif";
   > h1 {
     font-family: "Bold";
     letter-spacing: 3px;
@@ -102,9 +117,21 @@ export const TextWrapperRight = styled.div`
 
 export const ImagesWrapper = styled.div`
   display: flex;
-  flex-flow: column;
   flex-wrap: wrap;
-  align-content: flex-end;
+  @media only screen and (min-width: 1440px) {
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+`;
+
+export const ProjectsWrapper = styled.div`
+  @media only screen and (min-width: 850px) {
+    width: 60%;
+    padding-top: -10px;
+  }
+  padding-top: 10px;
+  padding-bottom: 30px;
 `;
 
 export const ProjectImage = styled.div<{
@@ -124,23 +151,37 @@ export const ProjectImage = styled.div<{
 `;
 
 export const ImagesRight = styled.div`
-  margin-left: 50%;
+  @media only screen and (min-width: 1440px) {
+    margin-left: 50%;
+  }
   ${ProjectImage} {
     border: 2px solid #a3b051;
     box-shadow: 5px 5px #a3b051;
+    margin-right: 20px;
+    @media only screen and (min-width: 850px) {
+      margin-right: 0;
+    }
   }
 `;
 
 export const ImagesLeft = styled.div`
-  margin-right: 50%;
+  @media only screen and (min-width: 1440px) {
+    margin-right: 50%;
+  }
   width: 100%;
   ${ProjectImage} {
     border: 2px solid #a3b051;
     box-shadow: -5px 5px #a3b051;
+    margin-right: 20px;
+    @media only screen and (min-width: 850px) {
+      margin-right: 0;
+    }
   }
 `;
 
 export const ProjectCard = styled.div`
-  display: flex;
+  @media only screen and (min-width: 1440px) {
+    display: flex;
+  }
   padding-top: 50px;
 `;

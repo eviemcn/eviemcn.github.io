@@ -12,8 +12,10 @@ import {
   ImagesLeft,
   ImagesRight,
   ImagesWrapper,
+  NavListItem,
   ProjectCard,
   ProjectImage,
+  ProjectsWrapper,
   TextWrapperLeft,
   TextWrapperRight,
 } from "./project-styles";
@@ -45,7 +47,70 @@ export const Projects = () => {
         }
         style={{ boxShadow: "none" }}
       />
-      <div style={{ width: "60%", paddingBottom: "30px", paddingTop: "-10px" }}>
+      <DetailsWrapper>
+        <h1>Projects</h1>
+        <p>Past and current projects I am working on or have worked on.</p>
+        <h3>Jump to:</h3>
+        <div>
+          <NavListItem>
+            <a
+              href="#website"
+              onMouseOver={() => setShowArrow(0)}
+              onMouseLeave={() => setShowArrow(99)}
+            >
+              This Website
+            </a>
+            <Arrow
+              style={{ display: showArrow === 0 ? "inline-flex" : "none" }}
+            >
+              <ArrowLeft fill="black" />
+            </Arrow>
+          </NavListItem>
+          <NavListItem>
+            <a
+              href="#dental-website"
+              onMouseOver={() => setShowArrow(1)}
+              onMouseLeave={() => setShowArrow(99)}
+            >
+              Dooley & McNaughton Dental Website
+            </a>
+            <Arrow
+              style={{ display: showArrow === 1 ? "inline-flex" : "none" }}
+            >
+              <ArrowLeft />
+            </Arrow>
+          </NavListItem>
+          <NavListItem>
+            <a
+              href="#granology"
+              onMouseOver={() => setShowArrow(2)}
+              onMouseLeave={() => setShowArrow(99)}
+            >
+              Granology
+            </a>
+            <Arrow
+              style={{ display: showArrow === 2 ? "inline-flex" : "none" }}
+            >
+              <ArrowLeft />
+            </Arrow>
+          </NavListItem>
+          <NavListItem>
+            <a
+              href="#balsamiq"
+              onMouseOver={() => setShowArrow(3)}
+              onMouseLeave={() => setShowArrow(99)}
+            >
+              Balsamiq Wireframe Mockup
+            </a>
+            <Arrow
+              style={{ display: showArrow === 3 ? "inline-flex" : "none" }}
+            >
+              <ArrowLeft />
+            </Arrow>
+          </NavListItem>
+        </div>
+      </DetailsWrapper>
+      <ProjectsWrapper>
         <ProjectCard id="website">
           <ImagesLeft>
             <ImagesWrapper>
@@ -96,19 +161,6 @@ export const Projects = () => {
           </TextWrapperRight>
         </ProjectCard>
         <ProjectCard id="dental-website">
-          <TextWrapperLeft>
-            <h3>
-              <a target="_blank" href="https://dooleymcnaughtondental.co.nz/">
-                Dooley & McNaughton Dental Website
-              </a>
-            </h3>
-            <p>
-              A website for Dooley & McNaughton Dental. The client wanted an
-              informative and easy to use website with minimal pages to ensure
-              ease of navigation.
-            </p>
-            <small>Created website in September 2019</small>
-          </TextWrapperLeft>
           <ImagesRight>
             <ImagesWrapper>
               <ProjectImage
@@ -133,6 +185,19 @@ export const Projects = () => {
               />
             </ImagesWrapper>
           </ImagesRight>
+          <TextWrapperLeft>
+            <h3>
+              <a target="_blank" href="https://dooleymcnaughtondental.co.nz/">
+                Dooley & McNaughton Dental Website
+              </a>
+            </h3>
+            <p>
+              A website for Dooley & McNaughton Dental. The client wanted an
+              informative and easy to use website with minimal pages to ensure
+              ease of navigation.
+            </p>
+            <small>Created website in September 2019</small>
+          </TextWrapperLeft>
         </ProjectCard>
         <ProjectCard id="granology">
           <ImagesLeft>
@@ -182,15 +247,6 @@ export const Projects = () => {
           </TextWrapperRight>
         </ProjectCard>
         <ProjectCard id="balsamiq">
-          <TextWrapperLeft>
-            <h3>Balsamiq Wireframe Mockup</h3>
-            <p>
-              Created a mockup using Balsamiq to practise using a wireframing
-              tool. The mockup is an online learning tool for studying Te Reo
-              Māori.
-            </p>
-            <small>Prototype</small>
-          </TextWrapperLeft>
           <ImagesRight>
             <ImagesWrapper>
               <ProjectImage
@@ -243,78 +299,24 @@ export const Projects = () => {
               />
             </ImagesWrapper>
           </ImagesRight>
+          <TextWrapperLeft>
+            <h3>Balsamiq Wireframe Mockup</h3>
+            <p>
+              Created a mockup using Balsamiq to practise using a wireframing
+              tool. The mockup is an online learning tool for studying Te Reo
+              Māori.
+            </p>
+            <small>Prototype</small>
+          </TextWrapperLeft>
         </ProjectCard>
-      </div>
-      <DetailsWrapper>
-        <h1>Projects</h1>
-        <p>Past and current projects I am working on or have worked on.</p>
-        <h3>Jump to:</h3>
-        <div>
-          <p style={{ display: "flex", justifyContent: "flex-end" }}>
-            <a
-              href="#website"
-              onMouseOver={() => setShowArrow(0)}
-              onMouseLeave={() => setShowArrow(99)}
-            >
-              This Website
-            </a>
-            <Arrow
-              style={{ display: showArrow === 0 ? "inline-flex" : "none" }}
-            >
-              <ArrowLeft fill="black" />
-            </Arrow>
-          </p>
-          <p style={{ display: "flex", justifyContent: "flex-end" }}>
-            <a
-              href="#dental-website"
-              onMouseOver={() => setShowArrow(1)}
-              onMouseLeave={() => setShowArrow(99)}
-            >
-              Dooley & McNaughton Dental Website
-            </a>
-            <Arrow
-              style={{ display: showArrow === 1 ? "inline-flex" : "none" }}
-            >
-              <ArrowLeft />
-            </Arrow>
-          </p>
-          <p style={{ display: "flex", justifyContent: "flex-end" }}>
-            <a
-              href="#granology"
-              onMouseOver={() => setShowArrow(2)}
-              onMouseLeave={() => setShowArrow(99)}
-            >
-              Granology
-            </a>
-            <Arrow
-              style={{ display: showArrow === 2 ? "inline-flex" : "none" }}
-            >
-              <ArrowLeft />
-            </Arrow>
-          </p>
-          <p style={{ display: "flex", justifyContent: "flex-end" }}>
-            <a
-              href="#balsamiq"
-              onMouseOver={() => setShowArrow(3)}
-              onMouseLeave={() => setShowArrow(99)}
-            >
-              Balsamiq Wireframe Mockup
-            </a>
-            <Arrow
-              style={{ display: showArrow === 3 ? "inline-flex" : "none" }}
-            >
-              <ArrowLeft />
-            </Arrow>
-          </p>
-        </div>
-      </DetailsWrapper>
+      </ProjectsWrapper>
 
       {isViewerOpen && (
         <ImageViewer
           backgroundStyle={{
             zIndex: 10,
             backgroundColor: "rgb(0,0,0,0.9)",
-            padding: "0 200px",
+            padding: "0 15%",
           }}
           src={images}
           currentIndex={currentImage}

@@ -4,6 +4,7 @@ import {
   DetailsWrapper,
   Sketch,
   SketchGrid,
+  SketchRow,
   SketchWrapper,
   TextWrapper,
 } from "./home-styles";
@@ -36,7 +37,7 @@ export const Home = () => {
       </DetailsWrapper>
       <SketchWrapper>
         <SketchGrid>
-          <div style={{ display: "flex", height: "22%" }}>
+          <SketchRow>
             <Sketch imageUrl="" />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-pink.png"
@@ -47,8 +48,8 @@ export const Home = () => {
               filter={Math.random() < 0.5}
             />
             <Sketch imageUrl="" />
-          </div>
-          <div style={{ display: "flex", height: "22%" }}>
+          </SketchRow>
+          <SketchRow>
             <Sketch
               imageUrl="../assets/home/sketches/sketch-green.png"
               filter={Math.random() < 0.5}
@@ -62,8 +63,8 @@ export const Home = () => {
               imageUrl="../assets/home/sketches/sketch-purple.png"
               filter={Math.random() < 0.5}
             />
-          </div>
-          <div style={{ display: "flex", height: "22%" }}>
+          </SketchRow>
+          <SketchRow>
             <Sketch imageUrl="" />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-orange.png"
@@ -74,8 +75,8 @@ export const Home = () => {
               imageUrl="../assets/home/sketches/sketch-bluenote.png"
               filter={Math.random() < 0.5}
             />
-          </div>
-          <div style={{ display: "flex", height: "22%" }}>
+          </SketchRow>
+          <SketchRow>
             <Sketch
               imageUrl="../assets/home/sketches/sketch-aqua.png"
               filter={Math.random() < 0.5}
@@ -86,7 +87,7 @@ export const Home = () => {
               filter={Math.random() < 0.5}
             />
             <Sketch imageUrl="" />
-          </div>
+          </SketchRow>
         </SketchGrid>
       </SketchWrapper>
     </div>

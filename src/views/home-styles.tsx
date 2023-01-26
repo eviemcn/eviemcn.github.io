@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const DetailsWrapper = styled.div`
-  position: fixed;
-  width: 25%;
-  right: 5%;
-  top: 20%;
+  padding-top: 20px;
+  @media only screen and (min-width: 850px) {
+    padding-top: 0;
+    position: fixed;
+    width: 25%;
+    right: 5%;
+    top: 20%;
+    text-align: right;
+  }
   font-family: "Serif";
-  text-align: right;
+  text-align: left;
   > h1 {
     font-family: "Bold";
     letter-spacing: 3px;
@@ -29,14 +34,39 @@ export const DetailsWrapper = styled.div`
 `;
 
 export const SketchWrapper = styled.div`
-  width: 75%;
+  width: 100%;
+  @media only screen and (min-width: 850px) {
+    width: 75%;
+  }
+`;
+
+export const SketchRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  height: 40%;
+  @media only screen and (min-width: 850px) {
+    height: 28%;
+    padding-bottom: 0;
+  }
+  @media only screen and (min-width: 1440px) {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 22%;
+    padding-bottom: 0;
+  }
 `;
 
 export const Sketch = styled.div<{
   imageUrl: string;
   filter: boolean;
 }>`
-  width: 25%;
+  @media only screen and (min-width: 1440px) {
+    width: 25%;
+  }
+  @media only screen and (min-width: 850px) {
+    width: 33.3%;
+  }
+  width: 50%;
   height: 100%;
   background-image: url(${(props: any) => props.imageUrl});
   background-size: cover;
@@ -51,10 +81,15 @@ export const Sketch = styled.div<{
 `;
 
 export const SketchGrid = styled.div`
-  width: 60%;
+  @media only screen and (min-width: 850px) {
+    width: 80%;
+  }
+  @media only screen and (min-width: 1440px) {
+    width: 60%;
+    margin-left: 15%;
+  }
   height: 80vmin;
   margin-top: 70px;
-  margin-left: 15%;
 `;
 
 export const TextWrapper = styled.div`

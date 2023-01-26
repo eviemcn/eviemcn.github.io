@@ -12,6 +12,7 @@ import {
   ArtistTitle,
   DetailsWrapper,
   LoadingWrapper,
+  MusicWrapper,
   PlayCount,
   SelectOption,
   SelectWrapper,
@@ -186,17 +187,7 @@ export const TopAlbums = () => {
 
   return (
     <>
-      <div style={{ display: "flex" }}>
-        <div style={{ width: "60%" }}>
-          <LoadingWrapper loading={loading}>
-            <Circles width="60" height="60" color="#A3B051" visible={loading} />
-          </LoadingWrapper>
-          <div style={{ paddingTop: "30px" }}>
-            {albums?.map((album, index) => {
-              return renderLeftOrRight(album, index, loading);
-            })}
-          </div>
-        </div>
+      <div>
         <DetailsWrapper>
           <h1>Listening Habits</h1>
           <p>
@@ -225,6 +216,16 @@ export const TopAlbums = () => {
             </div>
           </SelectWrapper>
         </DetailsWrapper>
+        <MusicWrapper>
+          <LoadingWrapper loading={loading}>
+            <Circles width="60" height="60" color="#A3B051" visible={loading} />
+          </LoadingWrapper>
+          <div style={{ paddingTop: "30px" }}>
+            {albums?.map((album, index) => {
+              return renderLeftOrRight(album, index, loading);
+            })}
+          </div>
+        </MusicWrapper>
       </div>
     </>
   );

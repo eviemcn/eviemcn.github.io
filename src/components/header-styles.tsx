@@ -36,13 +36,15 @@ export const Logo = styled.div`
   :hover {
     cursor: pointer;
   }
+  display: flex;
+  align-items: center;
 `;
 
 export const NavItem = styled(Link)`
   text-align: right;
   letter-spacing: 1px;
   margin: none;
-  padding: 15px;
+  padding: 0 15px;
   color: black;
   text-decoration: none;
   :hover,

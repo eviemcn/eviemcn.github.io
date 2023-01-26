@@ -2,12 +2,17 @@ import styled from "styled-components";
 import defaultAlbum from "../../assets/compact-disc-solid.svg";
 
 export const DetailsWrapper = styled.div`
-  position: fixed;
-  width: 25%;
-  right: 5%;
-  top: 20%;
+  padding-top: 20px;
+  @media only screen and (min-width: 850px) {
+    padding-top: 0;
+    position: fixed;
+    width: 25%;
+    right: 5%;
+    top: 20%;
+    text-align: right;
+  }
   font-family: "Serif";
-  text-align: right;
+  text-align: left;
   > h1 {
     font-family: "Bold";
     letter-spacing: 3px;
@@ -17,8 +22,12 @@ export const DetailsWrapper = styled.div`
 export const SelectWrapper = styled.div`
   display: flex;
   width: 100%;
-  justify-content: right;
-  padding-top: 50px;
+  justify-content: center;
+  @media only screen and (min-width: 850px) {
+    justify-content: right;
+    padding-top: 50px;
+  }
+  padding-top: 30px;
 `;
 
 export const SelectOption = styled.div<{
@@ -40,6 +49,13 @@ export const SelectOption = styled.div<{
     }
     outline: none;
   }
+`;
+
+export const MusicWrapper = styled.div`
+  @media only screen and (min-width: 850px) {
+    width: 60%;
+  }
+  width: 100%;
 `;
 
 export const LoadingWrapper = styled.div<{
@@ -96,9 +112,14 @@ export const AlbumText = styled.div`
     padding-bottom: 1.5%;
     font-family: "Serif";
   }
+  @media only screen and (min-width: 850px) {
+    position: absolute;
+    left: 31%;
+    width: 30%;
+  }
   position: absolute;
-  left: 31%;
-  width: 30%;
+  left: 51%;
+  width: 40%;
 `;
 
 export const AlbumTextLeft = styled.div`
@@ -132,9 +153,14 @@ export const AlbumTextLeft = styled.div`
     padding-bottom: 1.5%;
     font-family: "Serif";
   }
+  @media only screen and (min-width: 850px) {
+    position: absolute;
+    right: 69.5%;
+    width: 30%;
+  }
   position: absolute;
-  right: 69.5%;
-  width: 30%;
+  right: 49.5%;
+  width: 40%;
 `;
 
 export const AlbumCover = styled.div<{
@@ -144,9 +170,14 @@ export const AlbumCover = styled.div<{
   background-image: url(${(props: any) =>
     props.imageUrl !== "" ? props.imageUrl : defaultAlbum});
   background-size: cover;
-  width: ${(props: any) => (props.imageUrl !== "" ? props.albumSize : `120`)}px;
-  height: ${(props: any) =>
-    props.imageUrl !== "" ? props.albumSize : `120`}px;
+  @media only screen and (min-width: 850px) {
+    width: ${(props: any) =>
+      props.imageUrl !== "" ? props.albumSize : `120`}px;
+    height: ${(props: any) =>
+      props.imageUrl !== "" ? props.albumSize : `120`}px;
+  }
+  width: 120px;
+  height: 120px;
   margin-right: 50%;
   filter: grayscale(100%);
   transition: 0.2s;
@@ -159,9 +190,14 @@ export const AlbumCoverRight = styled.div<{
   background-image: url(${(props: any) =>
     props.imageUrl !== "" ? props.imageUrl : defaultAlbum});
   background-size: cover;
-  width: ${(props: any) => (props.imageUrl !== "" ? props.albumSize : `120`)}px;
-  height: ${(props: any) =>
-    props.imageUrl !== "" ? props.albumSize : `120`}px;
+  @media only screen and (min-width: 850px) {
+    width: ${(props: any) =>
+      props.imageUrl !== "" ? props.albumSize : `120`}px;
+    height: ${(props: any) =>
+      props.imageUrl !== "" ? props.albumSize : `120`}px;
+  }
+  width: 120px;
+  height: 120px;
   margin-left: 50%;
   filter: grayscale(100%);
   transition: 0.2s;
@@ -180,10 +216,12 @@ export const AlbumWrapper = styled.div<{
     outline: none;
     ${AlbumCoverRight} {
       filter: none;
-      width: ${(props: any) =>
-        props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
-      height: ${(props: any) =>
-        props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
+      @media only screen and (min-width: 850px) {
+        width: ${(props: any) =>
+          props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
+        height: ${(props: any) =>
+          props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
+      }
       box-shadow: 2px 2px 5px #f5f4f4;
     }
     ${AlbumTextLeft} {
@@ -217,10 +255,12 @@ export const AlbumWrapperTextRight = styled.div<{
     outline: none;
     ${AlbumCover} {
       filter: none;
-      width: ${(props: any) =>
-        props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
-      height: ${(props: any) =>
-        props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
+      @media only screen and (min-width: 850px) {
+        width: ${(props: any) =>
+          props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
+        height: ${(props: any) =>
+          props.imageUrl !== "" ? props.albumSize + 10 : `130`}px;
+      }
       box-shadow: 2px 2px 5px #f5f4f4;
     }
     ${AlbumText} {
