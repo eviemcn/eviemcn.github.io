@@ -19,6 +19,7 @@ export const DetailsWrapper = styled.div`
   }
   > p {
     > a {
+      font-family: "Serif Italic";
       text-decoration: none;
       :hover {
         color: #a3b051;
