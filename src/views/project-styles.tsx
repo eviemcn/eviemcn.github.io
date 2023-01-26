@@ -43,11 +43,17 @@ export const DetailsWrapper = styled.div`
   font-family: "Serif";
   text-align: left;
   > h1 {
-    font-family: "Bold";
+    @media only screen and (min-width: 850px) {
+      font-family: "Bold";
+    }
+    font-family: "Regular";
     letter-spacing: 3px;
   }
   > h3 {
-    font-family: "Bold";
+    @media only screen and (min-width: 850px) {
+      font-family: "Bold";
+    }
+    font-family: "Regular";
     letter-spacing: 1px;
   }
 `;
@@ -77,7 +83,10 @@ export const TextWrapperLeft = styled.div`
         outline: none;
       }
     }
-    font-family: "Bold";
+    @media only screen and (min-width: 850px) {
+      font-family: "Bold";
+    }
+    font-family: "Regular";
     letter-spacing: 1px;
   }
 `;
@@ -110,7 +119,10 @@ export const TextWrapperRight = styled.div`
       }
     }
     color: black;
-    font-family: "Bold";
+    @media only screen and (min-width: 850px) {
+      font-family: "Bold";
+    }
+    font-family: "Regular";
     letter-spacing: 1px;
   }
 `;

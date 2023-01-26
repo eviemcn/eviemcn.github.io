@@ -13,11 +13,17 @@ export const DetailsWrapper = styled.div`
   font-family: "Serif";
   text-align: left;
   > h1 {
-    font-family: "Bold";
+    @media only screen and (min-width: 850px) {
+      font-family: "Bold";
+    }
+    font-family: "Regular";
     letter-spacing: 3px;
   }
   > h3 {
-    font-family: "Bold";
+    @media only screen and (min-width: 850px) {
+      font-family: "Bold";
+    }
+    font-family: "Regular";
     letter-spacing: 1px;
     color: #a3b051;
     margin: 0;
@@ -87,6 +93,7 @@ export const SketchGrid = styled.div`
   @media only screen and (min-width: 1440px) {
     width: 60%;
     margin-left: 15%;
+    margin-bottom: 0;
   }
   height: 80vmin;
   margin-top: 70px;
@@ -97,7 +104,10 @@ export const TextWrapper = styled.div`
   text-align: left;
   width: 50%;
   > h1 {
-    font-family: "Bold";
+    @media only screen and (min-width: 850px) {
+      font-family: "Bold";
+    }
+    font-family: "Regular";
     letter-spacing: 3px;
   }
 `;
