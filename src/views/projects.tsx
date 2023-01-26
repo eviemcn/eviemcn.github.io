@@ -22,7 +22,7 @@ export const Projects = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const [images, setImages] = useState([""]);
-  const [showArrow, setShowArrow] = useState(null);
+  const [showArrow, setShowArrow] = useState(99);
 
   const openImageViewer = useCallback((index: number) => {
     setCurrentImage(index);
@@ -254,7 +254,7 @@ export const Projects = () => {
             <a
               href="#website"
               onMouseOver={() => setShowArrow(0)}
-              onMouseLeave={() => setShowArrow(null)}
+              onMouseLeave={() => setShowArrow(99)}
             >
               This Website
             </a>
@@ -268,7 +268,7 @@ export const Projects = () => {
             <a
               href="#dental-website"
               onMouseOver={() => setShowArrow(1)}
-              onMouseLeave={() => setShowArrow(null)}
+              onMouseLeave={() => setShowArrow(99)}
             >
               Dooley & McNaughton Dental Website
             </a>
@@ -282,7 +282,7 @@ export const Projects = () => {
             <a
               href="#granology"
               onMouseOver={() => setShowArrow(2)}
-              onMouseLeave={() => setShowArrow(null)}
+              onMouseLeave={() => setShowArrow(99)}
             >
               Granology
             </a>
@@ -296,7 +296,7 @@ export const Projects = () => {
             <a
               href="#balsamiq"
               onMouseOver={() => setShowArrow(3)}
-              onMouseLeave={() => setShowArrow(null)}
+              onMouseLeave={() => setShowArrow(99)}
             >
               Balsamiq Wireframe Mockup
             </a>

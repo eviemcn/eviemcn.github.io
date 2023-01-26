@@ -43,7 +43,9 @@ export const Sketch = styled.div<{
   filter: ${(props: any) => (props.filter ? `grayscale(100%)` : `none`)};
   transition: 0.2s;
   :hover {
-    filter: ${(props: any) => (props.filter ? `none` : `grayscale(100%)`)};
+    filter: ${(props: any) =>
+      props.filter || props.imageUrl === "" ? `none` : `grayscale(100%)`};
+    background-color: #a3b051;
   }
 `;
 

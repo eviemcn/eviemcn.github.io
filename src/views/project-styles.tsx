@@ -29,16 +29,10 @@ export const DetailsWrapper = styled.div`
         :focus {
           color: #a3b051;
           outline: none;
-          ${Arrow} {
-            display: block;
-          }
         }
         :focus-visible {
           color: #a3b051;
           outline: none;
-          ${Arrow} {
-            display: block;
-          }
         }
         :visited {
           color: black;
