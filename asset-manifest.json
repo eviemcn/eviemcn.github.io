@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.89a5d9fe.css",
-    "main.js": "/static/js/main.1ebcbc21.js",
+    "main.js": "/static/js/main.fff3ffba.js",
     "static/media/Recoleta-RegularDEMO.otf": "/static/media/Recoleta-RegularDEMO.fd9bfd35d1085b5c6511.otf",
     "static/media/LiberationSerif-Regular.ttf": "/static/media/LiberationSerif-Regular.61956931a8cc0472e132.ttf",
     "static/media/AlteHaasGroteskBold.ttf": "/static/media/AlteHaasGroteskBold.51e503d8635aaf81c93d.ttf",
@@ -21,10 +21,10 @@
     "static/media/arrowUp16.svg": "/static/media/arrowUp16.7c86246d9f93aa8bc6d661a4d9db06cf.svg",
     "static/media/album16.svg": "/static/media/album16.dd922328c1f64b6dd8e205f43a69b99f.svg",
     "main.89a5d9fe.css.map": "/static/css/main.89a5d9fe.css.map",
-    "main.1ebcbc21.js.map": "/static/js/main.1ebcbc21.js.map"
+    "main.fff3ffba.js.map": "/static/js/main.fff3ffba.js.map"
   },
   "entrypoints": [
     "static/css/main.89a5d9fe.css",
-    "static/js/main.1ebcbc21.js"
+    "static/js/main.fff3ffba.js"
   ]
 }
