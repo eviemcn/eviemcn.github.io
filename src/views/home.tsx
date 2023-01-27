@@ -1,15 +1,22 @@
 import logo from "./logo.svg";
-import React from "react";
+import React, { useState } from "react";
 import {
   DetailsWrapper,
+  Refresh,
+  RefreshWrapper,
   Sketch,
   SketchGrid,
   SketchRow,
   SketchWrapper,
   TextWrapper,
 } from "./home-styles";
+import { ReactComponent as RefreshIcon } from "../assets/refresh16.svg";
 
 export const Home = () => {
+  const [filterValues, setFilterValues] = useState(
+    Array.from({ length: 16 }, () => Math.random() < 0.5)
+  );
+
   return (
     <div className="Home">
       <DetailsWrapper>
@@ -38,58 +45,70 @@ export const Home = () => {
       <SketchWrapper>
         <SketchGrid>
           <SketchRow>
-            <Sketch imageUrl="" />
+            <Sketch imageUrl="" filter={filterValues[0]} />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-pink.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[1]}
             />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-maroon.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[2]}
             />
-            <Sketch imageUrl="" />
+            <Sketch imageUrl="" filter={filterValues[3]} />
           </SketchRow>
           <SketchRow>
             <Sketch
               imageUrl="../assets/home/sketches/sketch-green.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[4]}
             />
-            <Sketch imageUrl="" />
+            <Sketch imageUrl="" filter={filterValues[5]} />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-alien.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[6]}
             />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-purple.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[7]}
             />
           </SketchRow>
           <SketchRow>
-            <Sketch imageUrl="" />
+            <Sketch imageUrl="" filter={filterValues[8]} />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-orange.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[9]}
             />
-            <Sketch imageUrl="" />
+            <Sketch imageUrl="" filter={filterValues[10]} />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-bluenote.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[11]}
             />
           </SketchRow>
           <SketchRow>
             <Sketch
               imageUrl="../assets/home/sketches/sketch-aqua.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[12]}
             />
-            <Sketch imageUrl="" />
+            <Sketch imageUrl="" filter={filterValues[13]} />
             <Sketch
               imageUrl="../assets/home/sketches/sketch-mustard.png"
-              filter={Math.random() < 0.5}
+              filter={filterValues[14]}
             />
-            <Sketch imageUrl="" />
+            <Sketch imageUrl="" filter={filterValues[15]} />
           </SketchRow>
         </SketchGrid>
       </SketchWrapper>
+      <RefreshWrapper>
+        <Refresh
+          onClick={() =>
+            setFilterValues(
+              Array.from({ length: 16 }, () => Math.random() < 0.5)
+            )
+          }
+        >
+          <RefreshIcon fill="black" />
+          <p>Refresh Grid</p>
+        </Refresh>
+      </RefreshWrapper>
     </div>
   );
 };

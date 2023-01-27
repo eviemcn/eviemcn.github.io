@@ -57,7 +57,7 @@ export const SketchRow = styled.div`
   @media only screen and (min-width: 1440px) {
     display: flex;
     flex-wrap: nowrap;
-    height: 22%;
+    height: 24%;
     padding-bottom: 0;
   }
 `;
@@ -78,11 +78,13 @@ export const Sketch = styled.div<{
   background-size: cover;
   background-position: center;
   filter: ${(props: any) => (props.filter ? `grayscale(100%)` : `none`)};
+  background-color: ${(props: any) => (props.filter ? `#a3b05100` : `#a3b051`)};
   transition: 0.2s;
   :hover {
     filter: ${(props: any) =>
       props.filter || props.imageUrl === "" ? `none` : `grayscale(100%)`};
-    background-color: #a3b051;
+    background-color: ${(props: any) =>
+      props.filter ? `#a3b051` : "#a3b05100"};
   }
 `;
 
@@ -91,12 +93,49 @@ export const SketchGrid = styled.div`
     width: 80%;
   }
   @media only screen and (min-width: 1440px) {
-    width: 60%;
-    margin-left: 15%;
+    width: 75%;
+    margin-left: 8%;
     margin-bottom: 0;
   }
   height: 80vmin;
   margin-top: 70px;
+`;
+
+export const RefreshWrapper = styled.div`
+  display: flex;
+  @media only screen and (min-width: 850px) {
+    position: fixed;
+    width: 25%;
+    right: 5%;
+    bottom: 10%;
+    justify-content: flex-end;
+  }
+`;
+
+export const Refresh = styled.div`
+  font-family: "Regular";
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #a3b051;
+  > svg {
+    fill: #a3b051;
+  }
+  color: #a3b051;
+  padding: 10px;
+  > p {
+    padding-left: 5px;
+    margin: 0;
+    user-select: none;
+  }
+  :hover {
+    color: white;
+    background-color: #a3b051;
+    > svg {
+      fill: white;
+    }
+  }
+  cursor: pointer;
 `;
 
 export const TextWrapper = styled.div`
