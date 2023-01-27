@@ -105,7 +105,7 @@ export const Home = () => {
             )
           }
         >
-          <RefreshIcon fill="black" />
+          <RefreshIcon />
           <p>Refresh Grid</p>
         </Refresh>
       </RefreshWrapper>
