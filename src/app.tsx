@@ -16,6 +16,7 @@ import "./assets/fonts/AlteHaasGroteskRegular.ttf";
 import "./assets/fonts/LiberationSerif-Regular.ttf";
 import "./assets/fonts/LiberationSerif-Italic.ttf";
 import "./assets/fonts/DAYROM__.ttf";
+import { Spanish } from "./views/spanish";
 
 export const PageContainer = styled.div`
   padding: 40px 30px 60px 30px;
@@ -31,6 +32,7 @@ export const App = () => {
             <Route path={"/"} element={<Home />} />
             <Route path={"/projects"} element={<Projects />} />
             <Route path={"/music"} element={<Music />} />
+            <Route path={"/spanish"} element={<Spanish />} />
           </Routes>
         </PageContainer>
         <Footer />

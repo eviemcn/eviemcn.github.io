@@ -1,0 +1,32 @@
+export const spanishWords = [
+  ["yo", "I"],
+  ["soy", "am"],
+  ["tú", "you (informal)"],
+  ["eres", "are"],
+  ["él", "he"],
+  ["ella", "she"],
+  ["es", "is"],
+  ["está", "is (temporary)"],
+  ["tu", "your"],
+];
+
+export const spanishPhrases = [
+  ["Un niño come manzanas.", "A boy eats apples."],
+  ["Una niña bebe agua.", "A girl drinks water."],
+  ["La mujer bebe leche.", "The woman drinks milk."],
+  ["El hombre come pan.", "The man eats bread."],
+  ["¿Tú comes pan?", "Do you eat bread?"],
+  ["Sí, yo como pan.", "Yes, I eat bread."],
+  ["Hola, buenos días.", "Hello, good morning."],
+  ["¡Buenos días!", "Good morning!"],
+  ["Adiós, buenas noches.", "Bye, good night."],
+  ["¡Buenas noches!", "Good night!"],
+  ["Hola, yo soy Juan.", "Hello, I am Juan."],
+  ["Mucho gusto.", "Nice to meet you."],
+  ["Yo necesito un taxi.", "I need a taxi."],
+  ["El taxi está aquí.", "The taxi is here."],
+  ["¿Dónde?", "Where?"],
+  ["¿Dónde está tu pasaporte?", "Where is your passport?"],
+  ["Mi pasaporte está en el hotel.", "My passport is in the hotel."],
+  ["Un boleto a Santiago, por favor.", "A ticket to Santiago, please."],
+];
