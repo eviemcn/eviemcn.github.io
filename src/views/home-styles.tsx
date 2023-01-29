@@ -10,7 +10,7 @@ export const DetailsWrapper = styled.div`
     top: 20%;
     text-align: right;
   }
-  font-family: "Serif";
+  font-family: "Regular";
   text-align: left;
   > h1 {
     @media only screen and (min-width: 850px) {
@@ -30,7 +30,7 @@ export const DetailsWrapper = styled.div`
   }
   > p {
     > a {
-      font-family: "Serif Italic";
+      font-family: "Bold";
       text-decoration: none;
       :hover {
         color: #a3b051;
@@ -139,7 +139,7 @@ export const Refresh = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  font-family: "Serif";
+  font-family: "Regular";
   text-align: left;
   width: 50%;
   > h1 {

@@ -10,7 +10,7 @@ export const DetailsWrapper = styled.div`
     top: 20%;
     text-align: right;
   }
-  font-family: "Serif";
+  font-family: "Regular";
   text-align: left;
   > h1 {
     @media only screen and (min-width: 850px) {
@@ -30,7 +30,7 @@ export const DetailsWrapper = styled.div`
   }
   > p {
     > a {
-      font-family: "Serif Italic";
+      font-family: "Bold";
       text-decoration: none;
       :hover {
         color: #a3b051;
@@ -74,7 +74,7 @@ export const SelectOption = styled.div<{
 export const TranslationText = styled.p<{
   showTranslation?: boolean;
 }>`
-  font-family: "Serif";
+  font-family: "Regular";
   opacity: ${(props: any) => (props.showTranslation ? `1` : `0.3`)};
 `;
 

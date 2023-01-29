@@ -11,7 +11,7 @@ export const DetailsWrapper = styled.div`
     top: 20%;
     text-align: right;
   }
-  font-family: "Serif";
+  font-family: "Regular";
   text-align: left;
   > h1 {
     @media only screen and (min-width: 850px) {
@@ -113,7 +113,7 @@ export const AlbumText = styled.div`
   ${ArtistTitle}, ${PlayCount} {
     font-size: 14px;
     padding-bottom: 1.5%;
-    font-family: "Serif";
+    font-family: "Regular";
   }
   @media only screen and (min-width: 850px) {
     position: absolute;
@@ -154,7 +154,7 @@ export const AlbumTextLeft = styled.div`
   ${ArtistTitle}, ${PlayCount} {
     font-size: 14px;
     padding-bottom: 1.5%;
-    font-family: "Serif";
+    font-family: "Regular";
   }
   @media only screen and (min-width: 850px) {
     position: absolute;

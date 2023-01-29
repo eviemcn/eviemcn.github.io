@@ -40,7 +40,7 @@ export const DetailsWrapper = styled.div`
     top: 20%;
     text-align: right;
   }
-  font-family: "Serif";
+  font-family: "Regular";
   text-align: left;
   > h1 {
     @media only screen and (min-width: 850px) {
@@ -67,7 +67,7 @@ export const TextWrapperLeft = styled.div`
     right: 70%;
   }
   text-align: left;
-  font-family: "Serif";
+  font-family: "Regular";
   > h1 {
     font-family: "Bold";
     letter-spacing: 3px;
@@ -99,7 +99,7 @@ export const TextWrapperRight = styled.div`
     width: 27%;
   }
   text-align: left;
-  font-family: "Serif";
+  font-family: "Regular";
   > h1 {
     font-family: "Bold";
     letter-spacing: 3px;
