@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { TopAlbums } from "../components/top-albums/top-albums";
 import styled from "styled-components";
 import ScrollToTop from "react-scroll-to-top";

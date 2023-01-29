@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { spanishPhrases, spanishWords } from "../components/spanish-helper";
+import { LoadingWrapper } from "../components/top-albums/top-albums-styles";
+import { Circles } from "react-loader-spinner";
 import {
   DetailsWrapper,
   SelectOption,
@@ -14,21 +16,6 @@ const options = [
   { value: "words", label: "All Words" },
   { value: "phrases", label: "All Phrases" },
 ];
-
-const getRandom = () => {
-  const n = Math.floor(Math.random() * spanishWords.length);
-  const a = Math.floor(Math.random() * spanishPhrases.length);
-
-  return (
-    <>
-      <h1>{spanishWords[n][0]}</h1>
-      <h3>{spanishWords[n][1]}</h3>
-      <br />
-      <h1>{spanishPhrases[a][0]}</h1>
-      <h3>{spanishPhrases[a][1]}</h3>
-    </>
-  );
-};
 
 const getSpanish = (option: string) => {
   const n = Math.floor(Math.random() * spanishWords.length);
