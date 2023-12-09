@@ -23,6 +23,17 @@ export const PageContainer = styled.div`
 `;
 
 export const App = () => {
+  (function(l:any) {
+    if (l.search[1] === '/' ) {
+      var decoded = l.search.slice(1).split('&').map(function(s:any) { 
+        return s.replace(/~and~/g, '&')
+      }).join('?');
+      window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+      );
+    }
+  }(window.location))
+
   return (
     <Router>
       <div className="App">
