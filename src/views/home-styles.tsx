@@ -104,7 +104,7 @@ export const SketchGrid = styled.div`
   :hover {
     > svg {
       > path {
-        fill: #a3b051;
+        fill: #FFFFFF;
       }
     }
   }

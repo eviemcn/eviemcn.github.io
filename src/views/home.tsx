@@ -10,7 +10,6 @@ import {
   SketchWrapper,
   TextWrapper,
 } from "./home-styles";
-import { ReactComponent as RefreshIcon } from "../assets/refresh16.svg";
 import { ReactComponent as PixelPortrait } from "../assets/portrait-pixel.svg";
 
 export const Home = () => {
@@ -45,7 +44,7 @@ export const Home = () => {
       </DetailsWrapper>
       <SketchWrapper>
         <SketchGrid>
-          <PixelPortrait fill="#a3b051"/>
+          <img src={require('../assets/pixels-slow.gif')} alt="portrait" />
         </SketchGrid>
       </SketchWrapper>
     </div>
