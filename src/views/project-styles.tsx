@@ -59,10 +59,9 @@ export const DetailsWrapper = styled.div`
 `;
 
 export const TextWrapperLeft = styled.div`
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1040px) {
     text-align: right;
     width: 27%;
-    padding-top: 20px;
     position: absolute;
     right: 70%;
   }
@@ -92,11 +91,11 @@ export const TextWrapperLeft = styled.div`
 `;
 
 export const TextWrapperRight = styled.div`
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1040px) {
     position: absolute;
-    padding-top: 20px;
-    left: 32%;
+    left: 32.5%;
     width: 27%;
+    padding-bottom: 10px;
   }
   text-align: left;
   font-family: "Regular";
@@ -130,7 +129,7 @@ export const TextWrapperRight = styled.div`
 export const ImagesWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1040px) {
     flex-flow: column;
     flex-wrap: wrap;
     align-content: flex-end;
@@ -163,7 +162,7 @@ export const ProjectImage = styled.div<{
 `;
 
 export const ImagesRight = styled.div`
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1040px) {
     margin-left: 50%;
   }
   ${ProjectImage} {
@@ -177,7 +176,7 @@ export const ImagesRight = styled.div`
 `;
 
 export const ImagesLeft = styled.div`
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1040px) {
     margin-right: 50%;
   }
   width: 100%;
@@ -192,7 +191,7 @@ export const ImagesLeft = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1040px) {
     display: flex;
   }
   padding-top: 50px;

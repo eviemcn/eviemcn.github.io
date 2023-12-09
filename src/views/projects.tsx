@@ -125,28 +125,6 @@ export const Projects = () => {
                 }}
                 imageUrl="../assets/projects/website/my-web.png"
               />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/website/my-web.png",
-                    "../assets/projects/website/my-web2.png",
-                    "../assets/projects/website/my-web3.png",
-                  ]);
-                  openImageViewer(1);
-                }}
-                imageUrl="../assets/projects/website/my-web2.png"
-              />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/website/my-web.png",
-                    "../assets/projects/website/my-web2.png",
-                    "../assets/projects/website/my-web3.png",
-                  ]);
-                  openImageViewer(2);
-                }}
-                imageUrl="../assets/projects/website/my-web3.png"
-              />
             </ImagesWrapper>
           </ImagesLeft>
           <TextWrapperRight>
@@ -172,16 +150,6 @@ export const Projects = () => {
                   openImageViewer(0);
                 }}
                 imageUrl="../assets/projects/dental/dental-home.png"
-              />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/dental/dental-home.png",
-                    "../assets/projects/dental/dental-contact.png",
-                  ]);
-                  openImageViewer(1);
-                }}
-                imageUrl="../assets/projects/dental/dental-contact.png"
               />
             </ImagesWrapper>
           </ImagesRight>
@@ -213,28 +181,6 @@ export const Projects = () => {
                 }}
                 imageUrl="../assets/projects/granology/granology1.png"
               />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/granology/granology1.png",
-                    "../assets/projects/granology/granology2.png",
-                    "../assets/projects/granology/granology3.png",
-                  ]);
-                  openImageViewer(1);
-                }}
-                imageUrl="../assets/projects/granology/granology2.png"
-              />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/granology/granology1.png",
-                    "../assets/projects/granology/granology2.png",
-                    "../assets/projects/granology/granology3.png",
-                  ]);
-                  openImageViewer(2);
-                }}
-                imageUrl="../assets/projects/granology/granology3.png"
-              />
             </ImagesWrapper>
           </ImagesLeft>
           <TextWrapperRight>
@@ -260,42 +206,6 @@ export const Projects = () => {
                   openImageViewer(0);
                 }}
                 imageUrl="../assets/projects/balsamiq/Ako-landing-balsamiq.JPG"
-              />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/balsamiq/Ako-landing-balsamiq.JPG",
-                    "../assets/projects/balsamiq/ako-learn-balsamiq.JPG",
-                    "../assets/projects/balsamiq/Ako-login-balsamiq.JPG",
-                    "../assets/projects/balsamiq/ako-topic-balsamiq.JPG",
-                  ]);
-                  openImageViewer(1);
-                }}
-                imageUrl="../assets/projects/balsamiq/ako-learn-balsamiq.JPG"
-              />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/balsamiq/Ako-landing-balsamiq.JPG",
-                    "../assets/projects/balsamiq/ako-learn-balsamiq.JPG",
-                    "../assets/projects/balsamiq/Ako-login-balsamiq.JPG",
-                    "../assets/projects/balsamiq/ako-topic-balsamiq.JPG",
-                  ]);
-                  openImageViewer(2);
-                }}
-                imageUrl="../assets/projects/balsamiq/Ako-login-balsamiq.JPG"
-              />
-              <ProjectImage
-                onClick={() => {
-                  setImages([
-                    "../assets/projects/balsamiq/Ako-landing-balsamiq.JPG",
-                    "../assets/projects/balsamiq/ako-learn-balsamiq.JPG",
-                    "../assets/projects/balsamiq/Ako-login-balsamiq.JPG",
-                    "../assets/projects/balsamiq/ako-topic-balsamiq.JPG",
-                  ]);
-                  openImageViewer(3);
-                }}
-                imageUrl="../assets/projects/balsamiq/ako-topic-balsamiq.JPG"
               />
             </ImagesWrapper>
           </ImagesRight>
