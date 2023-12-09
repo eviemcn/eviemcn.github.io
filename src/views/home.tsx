@@ -11,6 +11,7 @@ import {
   TextWrapper,
 } from "./home-styles";
 import { ReactComponent as RefreshIcon } from "../assets/refresh16.svg";
+import { ReactComponent as PixelPortrait } from "../assets/portrait-pixel.svg";
 
 export const Home = () => {
   const [filterValues, setFilterValues] = useState(
@@ -44,71 +45,9 @@ export const Home = () => {
       </DetailsWrapper>
       <SketchWrapper>
         <SketchGrid>
-          <SketchRow>
-            <Sketch imageUrl="" filter={filterValues[0]} />
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-pink.png"
-              filter={filterValues[1]}
-            />
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-maroon.png"
-              filter={filterValues[2]}
-            />
-            <Sketch imageUrl="" filter={filterValues[3]} />
-          </SketchRow>
-          <SketchRow>
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-green.png"
-              filter={filterValues[4]}
-            />
-            <Sketch imageUrl="" filter={filterValues[5]} />
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-alien.png"
-              filter={filterValues[6]}
-            />
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-purple.png"
-              filter={filterValues[7]}
-            />
-          </SketchRow>
-          <SketchRow>
-            <Sketch imageUrl="" filter={filterValues[8]} />
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-orange.png"
-              filter={filterValues[9]}
-            />
-            <Sketch imageUrl="" filter={filterValues[10]} />
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-bluenote.png"
-              filter={filterValues[11]}
-            />
-          </SketchRow>
-          <SketchRow>
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-aqua.png"
-              filter={filterValues[12]}
-            />
-            <Sketch imageUrl="" filter={filterValues[13]} />
-            <Sketch
-              imageUrl="../assets/home/sketches/sketch-mustard.png"
-              filter={filterValues[14]}
-            />
-            <Sketch imageUrl="" filter={filterValues[15]} />
-          </SketchRow>
+          <PixelPortrait fill="#a3b051"/>
         </SketchGrid>
       </SketchWrapper>
-      <RefreshWrapper>
-        <Refresh
-          onClick={() =>
-            setFilterValues(
-              Array.from({ length: 16 }, () => Math.random() < 0.5)
-            )
-          }
-        >
-          <RefreshIcon />
-          <p>Refresh Grid</p>
-        </Refresh>
-      </RefreshWrapper>
     </div>
   );
 };

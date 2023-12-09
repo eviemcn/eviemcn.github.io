@@ -5,7 +5,7 @@ export const DetailsWrapper = styled.div`
   @media only screen and (min-width: 850px) {
     padding-top: 0;
     position: fixed;
-    width: 25%;
+    width: 35%;
     right: 5%;
     top: 20%;
     text-align: right;
@@ -90,15 +90,24 @@ export const Sketch = styled.div<{
 
 export const SketchGrid = styled.div`
   @media only screen and (min-width: 850px) {
-    width: 80%;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 5%;
   }
   @media only screen and (min-width: 1440px) {
-    width: 75%;
+    width: 70%;
     margin-left: 8%;
     margin-bottom: 0;
   }
-  height: 80vmin;
-  margin-top: 70px;
+  display: flex;
+  height: 70vmin;
+  :hover {
+    > svg {
+      > path {
+        fill: #a3b051;
+      }
+    }
+  }
 `;
 
 export const RefreshWrapper = styled.div`
