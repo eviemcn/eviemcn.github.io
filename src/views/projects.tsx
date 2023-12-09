@@ -156,13 +156,12 @@ export const Projects = () => {
           <TextWrapperLeft>
             <h3>
               <a target="_blank" href="https://dooleymcnaughtondental.co.nz/">
-                Dooley & McNaughton Dental Website
+                Dooley & McNaughton Website
               </a>
             </h3>
             <p>
-              A website for Dooley & McNaughton Dental. The client wanted an
-              informative and easy to use website with minimal pages to ensure
-              ease of navigation.
+              The client wanted an informative and easy to use website 
+              with minimal pages.
             </p>
             <small>Created website in September 2019</small>
           </TextWrapperLeft>
