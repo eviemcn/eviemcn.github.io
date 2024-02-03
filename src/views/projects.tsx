@@ -96,14 +96,28 @@ export const Projects = () => {
           </NavListItem>
           <NavListItem>
             <a
-              href="#balsamiq"
+              href="#whakaara"
               onMouseOver={() => setShowArrow(3)}
+              onMouseLeave={() => setShowArrow(99)}
+            >
+              Whakaara Android Designs
+            </a>
+            <Arrow
+              style={{ display: showArrow === 3 ? "inline-flex" : "none" }}
+            >
+              <ArrowLeft />
+            </Arrow>
+          </NavListItem>
+          <NavListItem>
+            <a
+              href="#balsamiq"
+              onMouseOver={() => setShowArrow(4)}
               onMouseLeave={() => setShowArrow(99)}
             >
               Balsamiq Wireframe Mockup
             </a>
             <Arrow
-              style={{ display: showArrow === 3 ? "inline-flex" : "none" }}
+              style={{ display: showArrow === 4 ? "inline-flex" : "none" }}
             >
               <ArrowLeft />
             </Arrow>
@@ -160,8 +174,8 @@ export const Projects = () => {
               </a>
             </h3>
             <p>
-              The client wanted an informative and easy to use website 
-              with minimal pages.
+              The client wanted an informative and easy to use website with
+              minimal pages.
             </p>
             <small>Created website in September 2019</small>
           </TextWrapperLeft>
@@ -191,8 +205,43 @@ export const Projects = () => {
             <small>Branding created in July 2019</small>
           </TextWrapperRight>
         </ProjectCard>
-        <ProjectCard id="balsamiq">
+        <ProjectCard id="whakaara">
           <ImagesRight>
+            <ImagesWrapper>
+              <ProjectImage
+                onClick={() => {
+                  setImages([
+                    "../assets/projects/whakaara/whakaara.png",
+                    "../assets/projects/whakaara/whakaara2.png",
+                    "../assets/projects/whakaara/whakaara3.png",
+                  ]);
+                  openImageViewer(0);
+                }}
+                imageUrl="../assets/projects/whakaara/whakaara.png"
+              />
+            </ImagesWrapper>
+          </ImagesRight>
+          <TextWrapperLeft>
+            <h3>
+              <a
+                target="_blank"
+                href="https://www.figma.com/file/q02rqZ8gLY5tr4453EaOFc/Whakaara-Design?type=design&node-id=0%3A1&mode=design&t=OniAYxn13a7PWGbM-1"
+              >
+                Whakaara Designs
+              </a>
+            </h3>
+            <p>
+              Created Android designs using Figma to practise using a Figma in
+              my personal time. The mockup is an <br />
+              <a target="_blank" href="https://github.com/ahudson20/whakaara">
+                alarm clock application.
+              </a>
+            </p>
+            <small>Prototype</small>
+          </TextWrapperLeft>
+        </ProjectCard>
+        <ProjectCard id="balsamiq">
+          <ImagesLeft>
             <ImagesWrapper>
               <ProjectImage
                 onClick={() => {
@@ -207,8 +256,8 @@ export const Projects = () => {
                 imageUrl="../assets/projects/balsamiq/Ako-landing-balsamiq.JPG"
               />
             </ImagesWrapper>
-          </ImagesRight>
-          <TextWrapperLeft>
+          </ImagesLeft>
+          <TextWrapperRight>
             <h3>Balsamiq Wireframe Mockup</h3>
             <p>
               Created a mockup using Balsamiq to practise using a wireframing
@@ -216,7 +265,7 @@ export const Projects = () => {
               Māori.
             </p>
             <small>Prototype</small>
-          </TextWrapperLeft>
+          </TextWrapperRight>
         </ProjectCard>
       </ProjectsWrapper>
 
