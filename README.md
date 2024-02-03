@@ -1,6 +1,6 @@
 # Personal Website
 
-https://eveimcn.github.io
+https://eviemcn.github.io
 
 ## Available Scripts
 
