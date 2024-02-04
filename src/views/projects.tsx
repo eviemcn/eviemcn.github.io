@@ -214,6 +214,7 @@ export const Projects = () => {
                     "../assets/projects/whakaara/whakaara.png",
                     "../assets/projects/whakaara/whakaara2.png",
                     "../assets/projects/whakaara/whakaara3.png",
+                    "../assets/projects/whakaara/whakaara4.png",
                   ]);
                   openImageViewer(0);
                 }}
